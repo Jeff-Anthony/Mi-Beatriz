@@ -1,0 +1,30 @@
+
+.module{
+
+	border: 1px solid #E1E1E1;
+	position: absolute;
+	border-radius: 5px;
+	top: 50%;
+	left: 50%;
+	padding: 50px;
+	transform: translate(-50%, -50%);
+
+}
+
+.sesion{
+
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+button{
+
+  font-size: 100px;
+  line-height: 50px;
+  text-align: center;
+  width: 290px;
+  height: 50px;
+
+}
