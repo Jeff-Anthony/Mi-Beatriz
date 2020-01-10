@@ -77,7 +77,9 @@ include("../db.php");
 
 </head>
 <body>
-<a href="../registro-clientes.php">Regresar</a>
+<ul class="pager">
+    <li class="previous"><a href="../registro-clientes.php"><span aria-hidden="true">&larr;</span> Regresar a Registro</a></li>
+</ul> 
 
 <form  action="editar-j.php?id=<?php echo $_GET['id']; ?>" method="POST">
          

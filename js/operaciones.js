@@ -108,8 +108,6 @@ $('#registro').click(function(){
         swal('Error', 'El correo que ingresaste ya se encuentra registrado', 'error');
       }else if(res == 'error_4'){
         swal('Error', 'Por favor ingresa un correo valido', 'warning');
-      }else if(res == 'error_5'){
-        swal('Error', 'El usuarios ya se encuentra Registrado!', 'error');
       }else{
         window.location.href = res ;
       }

@@ -17,7 +17,7 @@
             <input class="btn btn-primary"   type="button" value="DNI" onclick="DNI();">
           </div>
 <div  id="formulario_juridico" > 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
 
         
@@ -158,7 +158,7 @@
 
 <div id="formulario_natural">
 
- <div class="container">
+ <div class="container-fluid">
    <div class="row">
     <div class="col-3" >
  

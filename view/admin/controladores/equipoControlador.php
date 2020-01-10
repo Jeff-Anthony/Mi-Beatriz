@@ -12,7 +12,7 @@ if(isset($_POST['save-equipos'])){
  
 
   
-    if(empty($familia)||empty($tipo)||empty($marca)||empty($modelo)||empty($partnumber))
+    if(empty($tipo)||empty($marca)||empty($modelo)||empty($partnumber))
       {
         echo 'Complete todos los campos';
       }else{

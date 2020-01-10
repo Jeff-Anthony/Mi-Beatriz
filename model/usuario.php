@@ -58,7 +58,7 @@
 
 
 
-    public function registroUsuario($name, $lastname, $user, $email, $clave)
+    public function registroUsuario($name, $lastname, $user, $email, $country, $address, $province, $phone, $age, $clave)
     {
       parent::conectar();
 
@@ -66,6 +66,11 @@
       $lastname  = parent::filtrar($lastname);
       $user  = parent::filtrar($user);
       $email = parent::filtrar($email);
+      $country = parent::filtrar($country);
+      $address = parent::filtrar($address);
+      $province = parent::filtrar($province);
+      $phone = parent::filtrar($phone);
+      $age = parent::filtrar($age); 
       $clave = parent::filtrar($clave);
 
 
@@ -82,8 +87,7 @@
 
       }else{
 
-        parent::query('insert into usuarios(nombre, apellido, usuario, email, clave, cargo) values("'.$name.'", "'.$lastname.'", "'.$user.'", "'.$email.'", MD5("'.$clave.'"), 2)');
-      
+        parent::query('insert into usuarios(nombre, apellido, usuario, email,  pais, direccion, provincia, telefono, nacimiento, clave, cargo) values("'.$name.'", "'.$lastname.'", "'.$user.'", "'.$email.'","'.$country.'","'.$address.'","'.$province.'","'.$phone.'","'.$age.'", MD5("'.$clave.'"), 2)');
 
       }
       
